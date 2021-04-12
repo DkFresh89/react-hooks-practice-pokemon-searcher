@@ -2,10 +2,10 @@ import React from "react";
 import PokemonCard from "./PokemonCard";
 import { Card } from "semantic-ui-react";
 
-function PokemonCollection({pokemonArray,setPokemonArray}) {
+function PokemonCollection({filteredPokes}) {
  
 
-  const pokemons = pokemonArray.map((pokemon) => 
+  const pokemons = filteredPokes.map((pokemon) => 
     (
       <PokemonCard
       key={pokemon.name}

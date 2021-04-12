@@ -12,7 +12,7 @@ function PokemonCard(props) {
     <Card>
       <div onClick={handleToggle}>
         <div className="image">
-           {!toggleCard ?<img src={props.sprites.front} alt="oh no!" /> :<img src={props.sprites.back} alt="oh no!" />} 
+        <img src={!toggleCard ? props.sprites.front : props.sprites.back} alt={props.name} />
         </div>
         <div className="content">
           <div className="header">{props.name}</div>
